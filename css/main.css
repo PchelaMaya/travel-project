@@ -71,7 +71,7 @@ body {
 }
 
 .header__content {
-    max-width: 592px;
+    max-width: 610px;
     position: relative;
     z-index: 1;
 }
@@ -83,7 +83,7 @@ body {
 .header__img img {
     position: absolute;
     top: -180px;
-    right: -85px;
+    right: -170px;
     max-width: unset;
     width: 894px;
     height: 940px;
@@ -191,18 +191,107 @@ body {
 	border-radius: 15px;
 }
 .header__title {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 55px;
 }
 
 .header__text {
-    margin-bottom: 68px;
+    margin-bottom: 15px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255, 0.5);
   
 }
+.countdown-wrapper {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: #fdfd00;
+}
+.title {
+	font-size: 34px;
+	margin: 0 0;
+}
+.countdown {
+	display: none;
+	transform: scale(2);
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
 
+.time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+}
+
+.time h2 {
+	margin: 0 0;
+	font-size: 15px;
+}
+
+.time small {
+	font-size: 12px;
+}
+.lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+  }
+  .lds-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #fff;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+	0% {
+	  transform: scale(0);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  @keyframes lds-ellipsis3 {
+	0% {
+	  transform: scale(1);
+	}
+	100% {
+	  transform: scale(0);
+	}
+  }
+  @keyframes lds-ellipsis2 {
+	0% {
+	  transform: translate(0, 0);
+	}
+	100% {
+	  transform: translate(24px, 0);
+	}
+  }
 /* Destinations */
 
 .destinations {
@@ -359,6 +448,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     min-height: 315px;
     padding: 40px 15px;
@@ -880,6 +970,26 @@ body {
 }
 
 @media (max-width: 460px) {
+	.title {
+		font-size: 28px;
+	}
+
+	.countdown {
+		align-items: center;
+	}
+
+	.time {
+		margin: 10px;
+	}
+
+	.time h2 {
+		font-size: 10px;
+		margin: 0;
+	}
+
+	.time small {
+		font-size: 8px;
+	}
 	.customers__img img {
 		max-width: 100%;
 	}
@@ -903,9 +1013,7 @@ body {
 		row-gap: 15px;
 		align-items: center;
 	}
-    .cta__plate {
-        text-align: center;
-    }
+
     .cta__title {
 		font-size: 25px;
 		margin-bottom: 15px;

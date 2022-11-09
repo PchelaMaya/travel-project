@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +27,15 @@
                     </div>
                 
                     <ul class="nav__list nav__list--header">
-                        <li><a href="#!" class="active">Home</a></li>
-                        <li><a href="#!">Services</a></li>
-                        <li><a href="#!">Pricing</a></li>
-                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#!" class="active">Главная</a></li>
+                        <li><a href="#!">Акции</a></li>
+                        <li><a href="#!">Прайс</a></li>
+                        <li><a href="#!">Контакты</a></li>
                     </ul>
                         
                     <ul class="nav__login nav__login--header">
-                        <li><a href="#!">Sign up</a></li>
-                        <li><a href="#!" class="btn btn--login">Login</a></li>
+                        <li><a href="#!">Вход</a></li>
+                        <li><a href="#!" class="btn btn--login">Войти</a></li>
                     </ul>
                        
                     <button type="button" class="nav__toggle">
@@ -49,11 +49,31 @@
             <div class="header__row">
 
                 <div class="header__content">
-                
-                    <div class="header__badge">explore the world</div>
-                    <h1 class="header__title">Explore The Natural Beauty Of Halmahera With Us</h1>
-                    <div class="header__text"><p>explore the beauty of god's earth in a beautiful forest and have fun</p></div>
-                    <a href="#!" class="btn btn--header">Explore Now</a>
+                   
+                    <div class="header__badge">вокруг света</div>
+                    <h1 class="header__title">Душевные авторские путешествия по северу России</h1>
+                    <div class="header__text"><p>Наше путешествие - это душевное погружение в скрытое от городов деревенское бытие.</p></div>
+                    <div class="countdown-wrapper">
+                        <h1 class="title">До конца акции "Новый Год" осталось:</h1>
+                        <div class="countdown" id=countdown>
+                            <div class="time">
+                                <h2 id="hours">00</h2>
+                                <small>часов</small>
+                            </div>
+                            <div class="time">
+                                <h2 id="minutes">00</h2>
+                                <small>минут</small>
+                            </div>
+                            <div class="time">
+                                <h2 id="seconds">00</h2>
+                                <small>секунд</small>
+                            </div>
+                        </div>
+                        <div class="preloader" id="preloader">
+                            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                        </div>
+                    </div>
+                    <a href="#!" class="btn btn--header">Путешествовать</a>
                         
                 </div>
 
@@ -72,13 +92,13 @@
 
                     <div class="destinations__content">
                        <h2 class="destinations__title">
-                            <span>Choice Of</span>
-                            Destinations
+                            <span>Сказка и быль</span>
+                            Вепсского леса
                        </h2>
                        <div class="destinations__text">
-                            <p>explore the beauty of god's earth in a beautiful forest and have fun</p>
+                            <p>Встреча с прекрасной природой и завораживающими горами.</p>
                        </div>
-                       <a href="#!" class="btn">Explore Now</a>
+                       <a href="#!" class="btn">Путешествовать</a>
 
                     </div>
 
@@ -115,7 +135,7 @@
                     </div>
                     <div class="customers__content">
 
-                        <h2 class="customers__title">What do customers say about&nbsp;us?</h2>
+                        <h2 class="customers__title">Что думают о нас путешественники?</h2>
 
                         <div class="review">
                             <div class="review__client">
@@ -123,12 +143,12 @@
                                     <img src="./img/customers/user-avatar.png" alt="Avatar">
                                 </div>
                                 <div class="review__client-desc">
-                                    <h3 class="review__client-desc-name">Alpanasap</h3>
-                                    <p class="review__client-desc-country">Japung, Indonesia</p> 
+                                    <h3 class="review__client-desc-name">Василий</h3>
+                                    <p class="review__client-desc-country">Владивосток, Россия</p> 
                                 </div>
                             </div>
                             <div class="review__text">
-                                <p>Very satisfying service makes it comfortable, a beautiful place in the world.</p>
+                                <p>Спасибо ребятам, что показали нам настоящую Карелиию. Виды незабываемы!</p>
                             </div>
                             <div class="review__rating">
                                 <img src="./img/customers/stars-rating.svg" alt="">
@@ -142,22 +162,22 @@
             <div class="container"></div> 
                 <div class="cta__plate">
                     <h2 class="cta__title">
-                        Prepare Yourself And <br>
-                        Start Exploring With Us.</h2>
+                        Мы стараемся делать путешествия там,<br>
+                        где никого кроме нас нет.</h2>
                     <div class="cta__text">
-                        <p>There's the best discount for you today.</p>
+                        <p>Присоединяйся к нам и мы вместе изучим весь мир.</p>
                     </div>
-                    <a href="#!" class="btn">Get Started</a>
+                    <a href="#!" class="btn">Путешествовать</a>
                 </div>
 
         </section>
         <section class="subscribe">
             <div class="container">
                 <div class="subscribe__content">
-                    <h2 class="subscribe__title">Subscribe To Our Newsletter</h2>
+                    <h2 class="subscribe__title">Оставь почту и поехали с нами!</h2>
                     <form class="subscribe-form">
                         <input type="email" class="subscribe-form__input" placeholder="Yourmail@mail.com">
-                        <button class="btn btn--subscribe">Subscribe</button>
+                        <button class="btn btn--subscribe">Хочу поехать</button>
                     </form>
                 </div>
             </div>
@@ -174,15 +194,15 @@
                 </div>
             
                 <ul class="nav__list nav__list--footer">
-                    <li><a href="#!" class="active">Home</a></li>
-                    <li><a href="#!">Services</a></li>
-                    <li><a href="#!">Pricing</a></li>
-                    <li><a href="#!">Contact</a></li>
+                    <li><a href="#!" class="active">Главная</a></li>
+                    <li><a href="#!">Акции</a></li>
+                    <li><a href="#!">Прайс</a></li>
+                    <li><a href="#!">Контакты</a></li>
                 </ul>
                     
                 <ul class="nav__login nav__login--footer">
-                    <li><a href="#!">Sign up</a></li>
-                    <li><a href="#!" class="btn btn--login">Login</a></li>
+                    <li><a href="#!">Вход</a></li>
+                    <li><a href="#!" class="btn btn--login">Войти</a></li>
                 </ul>
                    
             </nav>
@@ -202,5 +222,6 @@
         referrerpolicy="no-referrer">
     </script>
     <script src="./js/main.js"></script>
+    <script src="./js/times.js"></script>
 </body>
 </html>
